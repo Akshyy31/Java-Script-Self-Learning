@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div
+      style="
+        width: 500px;
+        height: 500px;
+        background-color: antiquewhite;
+        margin: 0px auto;
+      "
+    >
+      <button
+        style="background-color: rgb(83, 215, 103); padding: 5px 10px"
+        id="increment"
+      >
+        Increment</button
+      ><br />
+      <button
+        style="background-color: rgb(212, 78, 60); padding: 5px 10px"
+        id="decrement"
+      >
+        Decrement
+      </button>
+
+      <span id="counter"></span>
+    </div>
+
+    <script>
+      (function () {
+        let count = 0;
+        function Increment() {
+          count++;
+          UpdateCount();
+        }
+        function Decrement() {
+          count--;
+          UpdateCount();
+        }
+
+        function UpdateCount() {
+          document.getElementById("counter").textContent = count;
+        }
+
+        let inBtn = document.getElementById("increment");
+        inBtn.addEventListener("click", Increment);
+
+        let DeBtn = document.getElementById("decrement");
+        DeBtn.addEventListener("click", Decrement);
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button style="padding: 10px 8px; background-color: aqua" id="btn">
+      click Me
+    </button>
+
+    <script>
+      function eventHandle(event) {
+        alert("Button Clicked");
+      }
+
+      let clickbtn = document.getElementById("btn");
+      clickbtn.addEventListener("click", eventHandle);
+
+      let timeOut = setTimeout(() => {
+        clickbtn.removeEventListener("click", eventHandle);
+        alert("Button was removed");
+        clearTimeout(timeOut);
+      }, 7000);
+    </script>
+  </body>
+</html>

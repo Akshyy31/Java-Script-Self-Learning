@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   number = Number(prompt("Enter the Number : "));
+      //   div = Number(prompt("Enter the divisible number"));
+      //   try {
+      //     if (div === 0) {
+      //       let res = number / 0;
+      //     } else {
+      //       res1 = number / div;
+      //       console.log(res1);
+      //     }
+      //   } catch (e) {
+      //     console.log(e.message);
+      //   } finally {
+      //     console.log("Task Completed");
+      //   }
+
+      let age = Number(prompt("Enter the age you want to check: "));
+
+      function checkAge(age) {
+        if (age < 18) {
+          throw new Error("Age is Below 18");
+        }
+        console.log("You can Voted");
+      }
+      try {
+        checkAge(age);
+      } catch (e) {
+        console.log(e.name);
+      } finally {
+        console.log("You can acces the Next part");
+      }
+    </script>
+  </body>
+</html>
