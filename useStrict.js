@@ -1,4 +1,4 @@
-// "use strict"
+"use strict"
 // x= 1.4
 // console.log(x);
 
@@ -18,22 +18,22 @@
 //   }
 // };
 
-for (let i = 1; i <= 5; i++) {
-  setTimeout(() => {
-    console.log(i);
-    if (i == 5) {
-      setTimeout(() => {
-        console.log("Done");
-      }, 1000);
-    }
-  }, i * 1000);
-}
+// for (let i = 1; i <= 5; i++) {
+//   setTimeout(() => {
+//     console.log(i);
+//     if (i == 5) {
+//       setTimeout(() => {
+//         console.log("Done");
+//       }, 1000);
+//     }
+//   }, i * 1000);
+// }
 
-for ( let i=1;i<=5;i++){
-    setTimeout(()=>{
-        console.log(i);   
-    },i*2000)
-}
+// for ( let i=1;i<=5;i++){
+//     setTimeout(()=>{
+//         console.log(i);   
+//     },i*2000)
+// }
 
 // concat 
 
@@ -52,9 +52,13 @@ for ( let i=1;i<=5;i++){
 //     res= arr[arr.length-1]-arr[0]
 //     console.log(res);  
 // // }
-arr=[-5,-10,-5,1]
-res=arr[arr.length-1]-arr[0]
-console.log(res);
+// arr=[-5,-10,-5,1]
+// res=arr[arr.length-1]-arr[0]
+// console.log(res);
 
 
-
+function sample(){
+ let a=10
+  console.log(a);
+}
+sample()

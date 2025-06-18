@@ -62,9 +62,19 @@
 // sample()
 // console.log(n);
 
-var a = 400;
-{
-  var a = 200;
+// var a = 400;
+// {
+//   var a = 200;
+//   console.log(a);
+// }
+// console.log(a);
+
+
+
+var a = 200;
+function s() {
+  var a = 100;
   console.log(a);
 }
+s()           
 console.log(a);
